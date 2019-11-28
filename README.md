@@ -28,7 +28,9 @@ delete log files older than 5 days in /logs/archive
 ```
 
 ## Add cron task to run the script on a daily basis at 1:00 am
+```
 nano /etc/crontab
 0 1 * * * /logs/delete_old_log_files.sh /logs/archive log 3
+```
 save by pressing Ctrl+O. 
 
